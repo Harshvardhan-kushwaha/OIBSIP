@@ -1,83 +1,139 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+* {
     margin: 0;
     padding: 0;
     border: none;
+    font-family: "Ubuntu", serif;
+    font-weight: 500;
+    font-style: normal;
 }
 
-body{
+body {
     height: 100vh;
-    background-color: aquamarine;
+    background-color: rgb(58, 221, 226);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.container{
+.container {
     height: 70vh;
     width: 300px;
-    background-color: rgb(255, 255, 255) ;
-    border: 1px solid rgb(0, 0, 0) ;
-    border-radius: 5px ;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0px 0px 5px black;
-   
+    box-shadow: 0px 0px 5px 1px rgb(0, 0, 0);
+
 }
 
 
 /* display section  */
 
-.display{
+.display {
     width: 280px;
     height: 68vh;
-    background-color: rgb(150, 150, 195);
+    background-color: rgb(255, 255, 255);
     border-radius: 5px;
-   
-} 
 
-input{
+}
+
+input {
+
     height: 80px;
     width: 240px;
     padding: 10px;
     margin-left: 10px;
     margin-top: 20px;
     border-radius: 5px;
-    box-shadow: 0px 0px 5px black;
+    border: 1px solid;
+    box-shadow: 0px 0px 5px 1px black;
     text-align: right;
-}
-.buttons{
-
-   margin-top: 20px;
-   height: 40vh;
-   margin-left: 10px;
-   width:240px;
-   padding: 10px;   
-   background-color: rgb(0, 0, 0);
-   border-radius: 5px;
-   display: grid;
-   grid-template-columns: auto auto auto auto auto ;
-   gap: 10px;
+    font-size: 20px;
 }
 
-button{
+input:hover {
+    background-color: rgba(241, 239, 239, 0.733);
+
+}
+
+/* button section */
+
+.buttons {
+
+    margin-top: 20px;
+    height: 40vh;
+    margin-left: 10px;
+    width: 240px;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+button {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 15px;
-    height:40px;
+    font-size: 15px;
+    height: 40px;
     width: 40px;
     color: white;
-    background-color: rgba(165, 42, 42, 0);
+    background-color: rgb(47, 187, 197);
     border-radius: 5px;
-    box-shadow: 0px 0px 5px 2px rgb(255, 255, 255);
-    
+    box-shadow: 0px 0px 4px 1px rgb(0, 0, 0);
+
 }
 
-button:hover{
-    background-color: rgb(118, 238, 208);
+button:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    box-shadow: 0px 0px 5px 2px rgb(0, 0, 0);
 }
 
+/* modifi buttons */
 
 
+.ans {
+    background-color: rgba(242, 248, 244, 0.87);
+    color: black;
+    box-shadow: 0px 0px 5px 1px black;
+}
 
+.del {
+    background-color: white;
+    color: red;
+    box-shadow: 0px 0px 5px 1px black;
+}
+
+.clear {
+    background-color: red;
+    color: white;
+    font-size: 10px;
+    box-shadow: 0px 0px 5px 1px black;
+}
+
+.enter {
+    color: black;
+    background-color: rgb(224, 224, 13);
+    box-shadow: 0px 0px 5px 1px rgb(0, 0, 0);
+    font-size: 15px;
+}
+
+.his {
+    box-shadow: 0px 0px 5px 1px rgb(0, 0, 0);
+    background-color: rgb(26, 87, 26);
+}
+
+.btn {
+    color: black;
+    box-shadow: 0px 0px 5px 1px black;
+    background-color: rgb(255, 255, 255);
+}

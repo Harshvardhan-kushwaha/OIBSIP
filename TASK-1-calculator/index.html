@@ -9,41 +9,44 @@
 <body> 
     <!-- this is auter div -->
     <div class="container">
-        <!-- this div is showing arithmatic calcutation in display -->
+        <!-- this div for display output using input & buttons -->
          <div class="display">
-          <input type="text" >
+          <input id="display" type="text" >
               <div class="buttons">
-                <button>(</button>
-                <button>)</button> 
-                <button>ans</button>
-                <button>del</button>
-                <button>clear</button>
+                <button  onclick="appedEliment()" >(</button>
+                <button onclick=" appedEliment()">)</button> 
+                <button  onclick=""class="ans">ANS</button>
+                <button  onclick="deleteLast()"class="del">DEL</button>
+                <button  onclick="clearDisplay()"class="clear">CLEAR</button>
 
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>
-                <button>%</button>
-                <button>#</button>
+                <button onclick="appedEliment()">7</button>
+                <button onclick="appedEliment()">8</button>
+                <button onclick="appedEliment()">9</button>
+                <button onclick="appedEliment()" class="btn">%</button>
+                <button onclick="appedEliment()" class="btn">#</button>
 
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
-                <button>*</button>
-                <button>/</button>
+                <button onclick="appedEliment()">4</button>
+                <button onclick="appedEliment()">5</button>
+                <button onclick="appedEliment()">6</button>
+                <button onclick="appedEliment()" class="btn">*</button>
+                <button  onclick="appedEliment()"class="btn">/</button>
 
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button>+</button>
-                <button>-</button>
+                <button onclick="appedEliment()">1</button>
+                <button onclick="appedEliment()">2</button>
+                <button onclick="appedEliment()">3</button>
+                <button  onclick="appedEliment()"class="btn">+</button>
+                <button  onclick="appedEliment()"class="btn">-</button>
 
-                <button>.</button>
-                <button>0</button>
-                <button>+_</button>
-                <button>Enter</button>
-              </div>
+                <button  onclick="appedEliment()"class="btn">.</button>
+                <button onclick="appedEliment()">0</button>
+                <button  onclick="appedEliment()"class="btn">+_</button>
+                <button  onclick="viewHistory()"class="his">His</button>
+                <button  onclick="calculateResult()"class="enter">Enter</button>
+ 
+            </div>
         </div>
        
     </div>
+    <script scr="script.js"></script>
 </body>
 </html>
