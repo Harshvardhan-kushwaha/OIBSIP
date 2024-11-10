@@ -1,52 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body> 
+
+<body>
     <!-- this is auter div -->
     <div class="container">
         <!-- this div for display output using input & buttons -->
-         <div class="display">
-          <input id="display" type="text" >
-              <div class="buttons">
-                <button  onclick="appedEliment()" >(</button>
-                <button onclick=" appedEliment()">)</button> 
-                <button  onclick=""class="ans">ANS</button>
-                <button  onclick="deleteLast()"class="del">DEL</button>
-                <button  onclick="clearDisplay()"class="clear">CLEAR</button>
+        <div class="Display">
+            <input id="display" placeholder="0" type="text">
+            <div class="buttons">
+                <button onclick="appendEliment('(')">(</button>
+                <button onclick=" appendEliment(')')">)</button>
+                <button onclick="ans()" class="ans">ANS</button>
+                <button onclick="deleteLast()" class="del">DEL</button>
+                <button onclick="clearDisplay()" class="clear">CLEAR</button>
 
-                <button onclick="appedEliment()">7</button>
-                <button onclick="appedEliment()">8</button>
-                <button onclick="appedEliment()">9</button>
-                <button onclick="appedEliment()" class="btn">%</button>
-                <button onclick="appedEliment()" class="btn">#</button>
+                <button onclick="appendEliment('7')">7</button>
+                <button onclick="appendEliment('8')">8</button>
+                <button onclick="appendEliment('9')">9</button>
+                <button onclick="appendEliment('%')" class="btn">%</button>
+                <button onclick="appendEliment('#')" class="btn">#</button>
 
-                <button onclick="appedEliment()">4</button>
-                <button onclick="appedEliment()">5</button>
-                <button onclick="appedEliment()">6</button>
-                <button onclick="appedEliment()" class="btn">*</button>
-                <button  onclick="appedEliment()"class="btn">/</button>
+                <button onclick="appendEliment('4')">4</button>
+                <button onclick="appendEliment('5')">5</button>
+                <button onclick="appendEliment('6')">6</button>
+                <button onclick="appendEliment('*')" class="btn">*</button>
+                <button onclick="appendEliment('/')" class="btn">/</button>
 
-                <button onclick="appedEliment()">1</button>
-                <button onclick="appedEliment()">2</button>
-                <button onclick="appedEliment()">3</button>
-                <button  onclick="appedEliment()"class="btn">+</button>
-                <button  onclick="appedEliment()"class="btn">-</button>
+                <button onclick="appendEliment('1')">1</button>
+                <button onclick="appendEliment('2')">2</button>
+                <button onclick="appendEliment('3')">3</button>
+                <button onclick="appendEliment('+')" class="btn">+</button>
+                <button onclick="appendEliment('-')" class="btn">-</button>
 
-                <button  onclick="appedEliment()"class="btn">.</button>
-                <button onclick="appedEliment()">0</button>
-                <button  onclick="appedEliment()"class="btn">+_</button>
-                <button  onclick="viewHistory()"class="his">His</button>
-                <button  onclick="calculateResult()"class="enter">Enter</button>
- 
+                <button onclick="appendEliment('.')" class="btn">.</button>
+                <button onclick="appendEliment('0')">0</button>
+                <button onclick="appendEliment('=')" class="btn">+_</button>
+                <button onclick="saveOutputToHistory()" class="his">His</button>
+                <button onclick="calculateResult()" class="enter">Enter</button>
+
             </div>
         </div>
-       
     </div>
-    <script scr="script.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>

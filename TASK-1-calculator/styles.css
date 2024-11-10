@@ -34,7 +34,7 @@ body {
 
 /* display section  */
 
-.display {
+.Display {
     width: 280px;
     height: 68vh;
     background-color: rgb(255, 255, 255);
@@ -67,8 +67,8 @@ input:hover {
 
     margin-top: 20px;
     height: 40vh;
-    margin-left: 10px;
-    width: 240px;
+    /* margin-left: 10px; */
+    width: 260px;
     padding: 10px;
     background-color: rgb(255, 255, 255);
     border-radius: 5px;
