@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: none;
+
+}
+
+body {
+    height: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container {
+
+
+    width: 80vw;
+    background-color: rgb(255, 255, 255);
+    color: black;
+
+}
+
+/* name section */
+
+
+.name {
+    width: 80vw;
+    color: white;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    border-bottom: 3px solid green;
+}
+h2{
+    color: green;
+}
+
+/* about section */
+
+.about {
+
+    height: 45vh;
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.left-about {
+    height: 45vh;
+    width: 40vw;
+    background-color: rgb(255, 255, 255);
+}
+
+.image {
+    height: 30vh;
+    width: 10vw ;
+    background-color: rgb(0, 0, 0);
+    background-image: url(Bhagat_Singh_1929.jpg);
+    background-size: 150px;
+    border-radius: 10px;
+    margin-left:200px;
+   
+}
+
+.right-about {
+    height: 45vh;
+    width: 40vw;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+.contant{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    width: 38vw ;
+    height: 45vh;
+
+}
+/* information of creater */
+
+.biography{
+    height: 45vh;
+    width: 80vw;
+    background-color: rgb(0, 0, 0);
+    border-top: 2px solid green;
+    display: flex;
+    justify-content: center;
+    align-items: center
+
+}
+
+.leftbox{
+    margin-top: 10px;
+   margin: 15px;
+    height: 45vh;
+    width: 15vw;
+    color: white;
+    background-color: rgb(0, 0, 0);
+}
+
+.middilebox{
+    margin-top: 10px;
+   
+    height: 45vh;
+    width: 50vw;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border-left:2px solid green ;
+}
+.rightbox{
+    margin-top: 10px;
+    margin: 15px;
+    height: 45vh;
+    width: 15vw;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border-left:2px solid green ;
+}
+
+
+
+.end{
+    height: 5vh;
+    width: 80vw;
+    background-color: rgb(112, 189, 112);
+    border-top: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
