@@ -2,9 +2,6 @@ function appendEliment(value) {
   document.getElementById("display").value += value;
   
 }
-
-
-
 function deleteLast() {
   let deleteLast = document.getElementById("display").value;
   document.getElementById("display").value = deleteLast.slice(0, -1);
